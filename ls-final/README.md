@@ -76,7 +76,7 @@ El `vercel.json` anterior tenía `"builds"` y `"routes"` que causaban conflicto 
 ---
 
 ## Contacto configurado
-- Email: hola@lsartgallery.com
+- Email: lrivera@lsartstudios.com
 - Instagram: @lsagalleryart
 - WhatsApp: +593 963 660 830
 
