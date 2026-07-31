@@ -251,13 +251,13 @@ body{background:var(--off);color:var(--text);font-family:var(--body);font-size:1
 /* ── CLIENTES ── */
 #clientes{background:#fff;overflow:hidden}
 #clientes .sh{max-width:720px}
-.logos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative;z-index:1}
-.logo-slot{min-height:118px;border-radius:8px;background:var(--off);border:1px solid rgba(42,37,32,.08);display:flex;align-items:center;justify-content:center;padding:28px;transition:transform .35s var(--spring),border-color .35s var(--ease),box-shadow .35s var(--ease);overflow:hidden}
+.logos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;position:relative;z-index:1}
+.logo-slot{min-height:132px;border-radius:8px;background:#fff;border:1px solid rgba(42,37,32,.08);display:flex;align-items:center;justify-content:center;padding:24px;transition:transform .35s var(--spring),border-color .35s var(--ease),box-shadow .35s var(--ease);overflow:hidden}
 .logo-slot:hover{transform:translateY(-6px);border-color:rgba(61,158,40,.22);box-shadow:0 18px 38px rgba(26,24,20,.08)}
 .logo-slot span{font-family:var(--script);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(42,37,32,.45);transition:color .25s}
-.logo-slot img{max-width:78%;max-height:56px;object-fit:contain;filter:grayscale(1);opacity:.68;transition:filter .3s,opacity .3s,transform .3s var(--spring)}
+.logo-slot img{max-width:88%;max-height:76px;width:auto;height:auto;object-fit:contain;filter:none;opacity:.9;transition:opacity .3s,transform .3s var(--spring)}
 .logo-slot:hover span{color:var(--accent2)}
-.logo-slot:hover img{filter:grayscale(0);opacity:1;transform:scale(1.04)}
+.logo-slot:hover img{opacity:1;transform:scale(1.04)}
 
 /* ── CONTACT — CENTRADO Y RENOVADO ── */
 #contacto{background:var(--off);overflow:hidden;text-align:center}
@@ -552,36 +552,19 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
   <div class="logos-grid">
     <div class="logo-slot rv rv1">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-1.png" alt="Empresa 1"> -->
-      <span>Marca 01</span>
+      <img src="images/client-symbol.svg" alt="Marca colaboradora" loading="lazy" decoding="async">
     </div>
     <div class="logo-slot rv rv2">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-2.png" alt="Empresa 2"> -->
-      <span>Marca 02</span>
+      <img src="images/client-enermax.png" alt="Enermax S.A." loading="lazy" decoding="async">
     </div>
     <div class="logo-slot rv rv3">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-3.png" alt="Empresa 3"> -->
-      <span>Marca 03</span>
+      <img src="images/client-hidrosanbartolo.png" alt="Hidrosanbartolo" loading="lazy" decoding="async">
     </div>
     <div class="logo-slot rv rv4">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-4.png" alt="Empresa 4"> -->
-      <span>Marca 04</span>
+      <img src="images/client-hidroriente.svg" alt="Hidroriente S.A." loading="lazy" decoding="async">
     </div>
     <div class="logo-slot rv rv1">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-5.png" alt="Empresa 5"> -->
-      <span>Marca 05</span>
-    </div>
-    <div class="logo-slot rv rv2">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-6.png" alt="Empresa 6"> -->
-      <span>Marca 06</span>
-    </div>
-    <div class="logo-slot rv rv3">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-7.png" alt="Empresa 7"> -->
-      <span>Marca 07</span>
-    </div>
-    <div class="logo-slot rv rv4">
-      <!-- Reemplaza el texto por: <img src="images/logo-empresa-8.png" alt="Empresa 8"> -->
-      <span>Marca 08</span>
+      <img src="images/client-hidroalto.png" alt="Hidroalto Generación de Energía S.A." loading="lazy" decoding="async">
     </div>
   </div>
 </section>

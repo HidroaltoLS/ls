@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+  <title id="title">Marca colaboradora</title>
+  <desc id="desc">Simbolo lineal de marca colaboradora.</desc>
+  <rect width="900" height="220" fill="none"/>
+  <g fill="none" stroke="#808080" stroke-width="7" stroke-linejoin="round">
+    <path d="M257 110 C255 86 264 73 285 70 C330 64 379 61 433 63 C447 64 453 70 452 88 C451 99 450 109 448 119 C391 116 328 116 257 110 Z"/>
+    <path d="M455 63 C507 62 555 65 596 70 C617 73 626 87 623 111 C553 116 490 116 433 119 C431 107 430 96 430 86 C430 70 438 64 455 63 Z"/>
+    <path d="M623 111 C674 113 714 118 746 126 C741 101 733 84 720 76 C687 71 646 68 596 70 C613 79 622 93 623 111 Z"/>
+    <path d="M257 110 C205 113 165 118 134 126 C139 101 147 84 160 76 C193 71 234 68 285 70 C267 79 258 93 257 110 Z"/>
+  </g>
+</svg>
