@@ -1,28 +1,23 @@
 # LS Art Gallery & Studio
 
-Portafolio estático en español. Conserva la paleta original, las fotografías, los datos de contacto y las secciones de studio, fotografía, video, diseño, proyectos y presentación personal.
+Portafolio estático en español de Luis Rivera. Fotografía, grabación y edición de video, dron, cobertura de eventos y contenido para redes en Quito.
 
-## Archivos
+## Estructura
 
-- `../index.html`: entrada desde la raíz del repositorio, con rutas `/ls-final/`.
-- `index.html`: entrada equivalente para desplegar esta carpeta como raíz.
-- `assets/gallery.css`: diseño, texturas, tamaños adaptables y estados accesibles.
-- `assets/portfolio-data.js`: títulos, descripciones, imágenes, videos y enlaces del portafolio.
-- `assets/gallery.js`: fichas ampliadas, navegación de obras y menú móvil.
-- `images/`: originales. `images/optimized/` contiene copias WebP para la galería; el visor abre el original.
+Inicio → Demo reel → Studio → Fotografía → Video → Servicios → Sobre mí → Clientes → Contacto.
 
-## Editar contenido
+- `../index.html`: entrada desde la raíz, con recursos en `/ls-final/`.
+- `index.html`: entrada equivalente si se publica esta carpeta como raíz.
+- `assets/gallery.css`: estilos y adaptación móvil.
+- `assets/portfolio-data.js`: fotografías, videos reales y configuración del demo reel.
+- `assets/gallery.js`: galería, visor accesible y reproductor del demo reel.
 
-Modifica las colecciones `photos`, `videos`, `designs` y `projs` en `assets/portfolio-data.js`. Las imágenes se resuelven respecto a `images/`. Para videos, usa una URL de inserción de YouTube o Vimeo en `videoUrl`; para proyectos, usa `link`. Cuando una pieza no tiene medios asociados, se muestra su ficha textual y se indica la ausencia del archivo, sin simular un reproductor.
+## Demo reel
 
-Las cifras, descripciones de trabajos y clientes proceden del sitio anterior. Las piezas de video y diseño actualmente no tienen archivos asociados. La imagen de la sección personal pertenece a la galería y no se presenta como retrato del autor.
+Completar `demoReel.videoUrl` con la dirección de inserción de YouTube o Vimeo, o con un MP4/WebM. Mientras no exista, se muestra una fotografía del portafolio con el aviso «Próximamente». No se reproducen videos automáticamente.
 
-## Vista previa y comprobación
+## Comprobar y publicar
 
-Desde la raíz del repositorio, usa `python3 -m http.server 4173` para servirlo. Ejecuta `python3 scripts/build.py` para comprobar las dos entradas, enlaces internos e imágenes y preparar `dist/`. No requiere dependencias de aplicación. Los estilos respetan reducción de movimiento; el visor nativo admite Escape, flechas y navegación por teclado.
+Desde la raíz, ejecutar `python3 scripts/build.py`. Comprueba las dos entradas, enlaces internos e imágenes y genera `dist/`. Publicar en el proyecto existente `ls` de Vercel; el dominio principal y las referencias de SEO son `https://lsartstudios.com/`.
 
-## Publicación
-
-Vercel puede seguir sirviendo el sitio estático desde la raíz del repositorio o desde `ls-final`, según la configuración existente. No se cambia el dominio ni la configuración actual. `.openai/hosting.json` identifica exclusivamente la vista privada de revisión en Sites; no modifica Vercel.
-
-Contacto: lrivera@lsartstudios.com · @lsartgallerystudio · +593 963 660 830.
+`.openai/hosting.json` corresponde a la copia en Sites y no configura Vercel.

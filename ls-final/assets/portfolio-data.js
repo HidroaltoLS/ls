@@ -33,62 +33,12 @@ const photos = [
     tags:[], img:'Drone5.jpg', alt:'Corte aéreo',
     bg:'linear-gradient(135deg,#17364d,#2f6f8f)', e:'⬟' },
 ];
-const videos = [
-  { id:'v1', title:'Campaña de marca — Identidad visual', cat:'Comercial',
-    desc:'Video institucional para marca de moda ecuatoriana. Dirección de arte, fotografía cinematográfica, edición dinámica. Producción completa en 5 días.',
-    tags:['Comercial','Moda','Cinematografía'], img:'', videoUrl:'',
-    dur:'2:34', bg:'linear-gradient(135deg,#0a1f0c,#142e18)', e:'▶' },
-  { id:'v2', title:'Cortometraje documental', cat:'Documental',
-    desc:'Micro-documental sobre artesanos tradicionales del Ecuador. Premio en festival local de cine independiente.',
-    tags:['Documental','Artesanía','Festival'], img:'', videoUrl:'',
-    dur:'8:12', bg:'linear-gradient(135deg,#0c1e14,#16302e)', e:'▷' },
-  { id:'v3', title:'Videoclip musical', cat:'Música',
-    desc:'Dirección y producción de videoclip para artista local. Estética onírica, doble exposición, locaciones en páramo.',
-    tags:['Música','Creativo','Dirección'], img:'', videoUrl:'',
-    dur:'3:58', bg:'linear-gradient(135deg,#0e2010,#1c3a20)', e:'▸' },
-  { id:'v4', title:'Reels para redes sociales', cat:'Social Media',
-    desc:'Pack de 12 reels verticales para campaña de redes sociales. Alta tasa de engagement. Edición rápida con soundtrack propio.',
-    tags:['Social Media','Reels','Branding'], img:'', videoUrl:'',
-    dur:'0:30', bg:'linear-gradient(135deg,#101e0e,#1e3018)', e:'▹' },
-];
-const designs = [
-  { id:'d1', title:'Identidad de marca',    cat:'Branding',
-    desc:'Diseño de identidad visual completa: logotipo, paleta de color, tipografía, manual de marca y aplicaciones.',
-    tags:['Branding','Logo','Manual'], img:'',
-    bg:'linear-gradient(135deg,#1a4a20,#3a8c42)', e:'◎' },
-  { id:'d2', title:'Poster editorial',      cat:'Diseño gráfico',
-    desc:'Serie de posters para festival cultural. Tipografía expresiva, composición asimétrica, paleta monocromática.',
-    tags:['Poster','Editorial','Tipografía'], img:'',
-    bg:'linear-gradient(135deg,#1e3a2a,#2e6a4a)', e:'◻' },
-  { id:'d3', title:'Ilustración conceptual',cat:'Ilustración',
-    desc:'Ilustración original para publicación impresa. Técnica mixta digital, temas de identidad cultural ecuatoriana.',
-    tags:['Ilustración','Digital','Cultura'], img:'',
-    bg:'linear-gradient(135deg,#1a3e1c,#2e7034)', e:'◇' },
-  { id:'d4', title:'Packaging premium',     cat:'Diseño gráfico',
-    desc:'Diseño de empaque para línea de productos artesanales. Materiales sostenibles, estética minimalista.',
-    tags:['Packaging','Premium','Sostenible'], img:'',
-    bg:'linear-gradient(135deg,#1e4a18,#38862c)', e:'◈' },
-  { id:'d5', title:'Arte mural urbano',     cat:'Ilustración',
-    desc:'Diseño de mural urbano en Quito. 40m² de intervención artística. Fusión de iconografía precolombina y estética contemporánea.',
-    tags:['Mural','Urbano','Arte'], img:'',
-    bg:'linear-gradient(135deg,#162e14,#2c5824)', e:'△' },
-];
-const projs = [
-  { id:'pr1',num:'01',title:'Plataforma de galería virtual',  sub:'Web App · React · Galería 3D',
-    desc:'Plataforma web para galería de arte virtual con recorrido en 3D, sistema de ventas y gestión de artistas.',
-    tags:['Web','React','3D','E-commerce'], link:'' },
-  { id:'pr2',num:'02',title:'App de portfolio fotógrafos',   sub:'Mobile App · UX/UI Design',
-    desc:'Diseño UX/UI de aplicación móvil para fotógrafos. Gestión de clientes, entrega digital y cotizaciones automáticas.',
-    tags:['Mobile','UX/UI','Fotografía'], link:'' },
-  { id:'pr3',num:'03',title:'Sistema de identidad digital',  sub:'Branding · Web · Social',
-    desc:'Sistema de identidad visual y digital completo: web, redes sociales, plantillas y kit de prensa.',
-    tags:['Branding','Web','Sistema'], link:'' },
-  { id:'pr4',num:'04',title:'Campaña audiovisual 360°',      sub:'Producción · Dirección · Post',
-    desc:'3 spots, 20 reels, 60 fotografías y activaciones digitales. Más de 1M de reproducciones orgánicas.',
-    tags:['Producción','Campaña','Digital'], link:'' },
-  { id:'pr5',num:'05',title:'Docuserie en 4 capítulos',      sub:'Documental · Streaming',
-    desc:'Producción y dirección de docuserie sobre tradiciones artesanales. Distribuida en plataforma regional.',
-    tags:['Documental','Serie','Streaming'], link:'' },
-];
+// Agrega únicamente trabajos reales con permiso de publicación.
+// Video: {id, title, cat, desc, tags:[], img:'', videoUrl:'https://www.youtube.com/embed/ID', format:'horizontal'}
+// También admite Vimeo embebido y archivos MP4/WebM. format puede ser 'vertical'.
+const videos = [];
 const imageBase=new URL('../images/',document.currentScript.src);
-for(const list of [photos,videos,designs])for(const item of list){if(item.img)item.img=new URL(item.img,imageBase).href;}
+for(const list of [photos,videos])for(const item of list){if(item.img)item.img=new URL(item.img,imageBase).href;}
+
+// Completar con el demo reel real: YouTube /embed/ID, player.vimeo.com/video/ID o MP4/WebM.
+const demoReel = { videoUrl: '' };

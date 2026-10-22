@@ -21,7 +21,7 @@ for entry in [ROOT/'index.html',ROOT/'ls-final/index.html']:
  for path in parser.paths:
   file=(ROOT/path.lstrip('/')) if path.startswith('/') else entry.parent/path
   assert file.is_file(),f'Missing asset: {file}'
-assert (ROOT/'ls-final/index.html').read_text()==(ROOT/'index.html').read_text().replace('/ls-final/',''),'Entry points differ'
+assert (ROOT/'ls-final/index.html').read_text()==(ROOT/'index.html').read_text().replace('"/ls-final/','"'),'Entry points differ'
 data=(ROOT/'ls-final/assets/portfolio-data.js').read_text()
 for name in re.findall(r"img:'([^']+)'",data):
  image=ROOT/'ls-final/images'/name
@@ -35,3 +35,6 @@ out.mkdir()
 shutil.copy2(ROOT/'index.html',out/'index.html')
 shutil.copytree(ROOT/'ls-final',out/'ls-final',ignore=shutil.ignore_patterns('README.md','vercel.json'))
 print('Build passed: both entry points, internal anchors, image assets and responsive previews verified.')
+
+for name in ['robots.txt','sitemap.xml']:
+ shutil.copy2(ROOT/name,out/name)

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lsartstudios.com/sitemap.xml
